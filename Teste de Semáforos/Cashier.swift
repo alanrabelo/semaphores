@@ -19,12 +19,12 @@ class Cashier: NSObject {
         self.number = number
     }
     
-    func serveClient(timeInterval: NSTimeInterval) {
+    func serveClient() {
         let initialDate = NSDate()
         var actualDate = NSDate()
         
         
-        let finishDate = initialDate.dateByAddingTimeInterval(timeInterval)
+        let finishDate = initialDate.dateByAddingTimeInterval(client!.necessaryTime)
         while actualDate.compare(finishDate) == NSComparisonResult.OrderedAscending {
             actualDate = NSDate()
         }

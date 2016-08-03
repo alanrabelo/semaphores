@@ -11,18 +11,20 @@ import Foundation
 class Client: NSObject {
     let name: String
     let number: Int
+    let necessaryTime: NSTimeInterval
     
-    init(name: String, number: Int) {
+    init(name: String, number: Int, necessaryTime: NSTimeInterval) {
         self.name = name
         self.number = number
+        self.necessaryTime = necessaryTime
     }
     
-    func beServed(timeInterval: NSTimeInterval) {
+    func beServed() {
         let initialDate = NSDate()
         var actualDate = NSDate()
         
         
-        let finishDate = initialDate.dateByAddingTimeInterval(timeInterval)
+        let finishDate = initialDate.dateByAddingTimeInterval(self.necessaryTime)
         while actualDate.compare(finishDate) == NSComparisonResult.OrderedAscending {
             actualDate = NSDate()
         }

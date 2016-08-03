@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71DA5AF1D526A99003A705F /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71DA5AE1D526A99003A705F /* PickerViewController.swift */; };
 		E7349FAE1D5220E300CD5E0F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7349FAD1D5220E300CD5E0F /* Client.swift */; };
 		E7349FB01D52214400CD5E0F /* Cashier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7349FAF1D52214400CD5E0F /* Cashier.swift */; };
 		E7DC5B821D4832E700CADA89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DC5B811D4832E700CADA89 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E71DA5AE1D526A99003A705F /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		E7349FAD1D5220E300CD5E0F /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		E7349FAF1D52214400CD5E0F /* Cashier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashier.swift; sourceTree = "<group>"; };
 		E7DC5B7E1D4832E700CADA89 /* Teste de Semáforos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teste de Semáforos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 			children = (
 				E7DC5B811D4832E700CADA89 /* AppDelegate.swift */,
 				E7DC5B831D4832E700CADA89 /* ViewController.swift */,
+				E71DA5AE1D526A99003A705F /* PickerViewController.swift */,
 				E7349FAD1D5220E300CD5E0F /* Client.swift */,
 				E7349FAF1D52214400CD5E0F /* Cashier.swift */,
 				E7DC5B851D4832E700CADA89 /* Main.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71DA5AF1D526A99003A705F /* PickerViewController.swift in Sources */,
 				E7DC5B841D4832E700CADA89 /* ViewController.swift in Sources */,
 				E7DC5B821D4832E700CADA89 /* AppDelegate.swift in Sources */,
 				E7349FAE1D5220E300CD5E0F /* Client.swift in Sources */,
