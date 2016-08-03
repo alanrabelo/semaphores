@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     let barberSemaphore = dispatch_semaphore_create(0)
     let mutex = dispatch_semaphore_create(5)
     var waiting = 0
+    var clientesCount = 0
+    
     
     func loop(timeInterval: NSTimeInterval) {
         let initialDate = NSDate()
@@ -34,8 +36,10 @@ class ViewController: UIViewController {
     
     func createCustomer() {
         while true {
-            loop(10)
+            loop(1)
             let customerGettinHairCut = NSThread(target: self, selector: #selector(self.customer), object: nil)
+            clientesCount += 1
+            customerGettinHairCut.name = "cliente \(clientesCount)"
             customerGettinHairCut.start()
         }
     }
@@ -49,6 +53,7 @@ class ViewController: UIViewController {
         barber.start()
         
         let customer = NSThread(target: self, selector: #selector(createCustomer), object: nil)
+        customer.name = "customerThread"
         customer.start()
         
        
@@ -101,7 +106,7 @@ class ViewController: UIViewController {
     
     func cutHair() {
         print("Barbeiro está cortando cabelo")
-        loop(3)
+        loop(8)
         return
     }
     
@@ -111,7 +116,7 @@ class ViewController: UIViewController {
     
     func getHairCut () {
         print("Algum cliente está cortando o cabelo")
-        loop(3)
+        loop(8)
         return
     }
     
